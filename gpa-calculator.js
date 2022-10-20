@@ -60,6 +60,19 @@ app.controller('calculator', function(){
 
   this.calculateGPA = function () {
   	var num = 0, denom = 0;
+    var semesterEnabledCount = 0;
+    for(var i = 0; i < that.years.length; i++) {
+      var year = that.years[i];
+  		for(var j = 0; j < year.length; j++) {
+        var semester = year[j];
+  			if( !!semester.enabled ) {
+          semesterEnabledCount += 1;
+        }
+      }
+    }
+    if( semesterEnabledCount == 10) {
+      window.alert("Impossible! Think again.. 🤓");
+    }
 
   	//Calculations
   	for(var i = 0; i < that.years.length; i++) {
