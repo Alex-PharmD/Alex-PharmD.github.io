@@ -71,7 +71,7 @@ app.controller('calculator', function(){
       }
     }
     if( semesterEnabledCount == 10) {
-      window.alert("Impossible! Think again.. 🤓");
+      window.confirm("Impossible! Think again.. 🤓");
     }
 
   	//Calculations
