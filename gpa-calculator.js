@@ -71,7 +71,7 @@ app.controller('calculator', function(){
       }
     }
     if( semesterEnabledCount == 10) {
-      alert("Impossible! Think again.. 🤓");
+      alert("Since you are from the future, have you found the happiness yet?");
     }
 
   	//Calculations
